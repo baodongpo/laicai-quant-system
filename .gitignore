@@ -1,11 +1,11 @@
 # Data & SQLite
-laicai/data/*.db
-laicai/data/*.db-journal
-laicai/data/*.db-wal
-laicai/data/logs/
+data/*.db
+data/*.db-journal
+data/*.db-wal
+data/logs/
 
 # Config & Secrets
-laicai/config/watchlist.json
+config/watchlist.json
 .env
 
 # Python
