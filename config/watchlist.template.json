@@ -2,43 +2,11 @@
   "stocks": [
     {
       "symbol": "SH600519",
-      "name": "贵州茅台",
+      "name": "Sample Stock",
       "market": "A-SH",
       "sync_enabled": true,
-      "buy_range": [1400, 1450],
-      "sell_range": [1900, 2000]
-    },
-    {
-      "symbol": "SZ000858",
-      "name": "五粮液",
-      "market": "A-SZ",
-      "sync_enabled": true,
-      "buy_range": [130, 140],
-      "sell_range": [180, 200]
-    },
-    {
-      "symbol": "AAPL",
-      "name": "Apple Inc.",
-      "market": "US",
-      "sync_enabled": true,
-      "buy_range": [180, 190],
-      "sell_range": [230, 250]
-    },
-    {
-      "symbol": "NVDA",
-      "name": "NVIDIA",
-      "market": "US",
-      "sync_enabled": true,
-      "buy_range": [100, 110],
-      "sell_range": [140, 160]
-    },
-    {
-      "symbol": "00700",
-      "name": "腾讯控股",
-      "market": "HK",
-      "sync_enabled": true,
-      "buy_range": [380, 400],
-      "sell_range": [480, 520]
+      "buy_range": [1400.0, 1450.0],
+      "sell_range": [1900.0, 2000.0]
     }
   ]
 }
