@@ -3,12 +3,21 @@ import json
 import os
 import sys
 
-DB_PATH = os.path.join(os.path.dirname(__file__), "../data/laicai.db")
+DB_PATH = os.path.join(os.path.dirname(__file__), "../../data/laicai.db")
 
 def init_db():
     os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
+
+    # 全局锁表
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS global_locks (
+        lock_name TEXT PRIMARY KEY,
+        holder_pid INTEGER,
+        acquired_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    )
+    """)
 
     # 股票注册表：存储配置的基本信息和开关
     cursor.execute("""
@@ -33,6 +42,9 @@ def init_db():
         forward_cursor TEXT,  -- 最新已拉取的日期 (e.g., 2026-03-01)
         backward_cursor TEXT, -- 最远已拉取的日期 (e.g., 2024-03-01)
         is_fully_backfilled INTEGER DEFAULT 0, -- 是否已拉取到 IPO
+        status TEXT DEFAULT 'IDLE',
+        running_pid INTEGER,
+        last_heartbeat TIMESTAMP,
         PRIMARY KEY (symbol, timeframe)
     )
     """)
@@ -90,7 +102,7 @@ def apply_config(config_path):
         buy_min, buy_max = stock.get("buy_range", [None, None])
         sell_min, sell_max = stock.get("sell_range", [None, None])
 
-        # UPSERT 逻辑
+        # UPSERT 注册表
         cursor.execute("""
         INSERT INTO stocks_registry (symbol, name, market, sync_enabled, buy_range_min, buy_range_max, sell_range_min, sell_range_max)
         VALUES (?, ?, ?, ?, ?, ?, ?, ?)
@@ -118,10 +130,10 @@ def apply_config(config_path):
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python3 db_manager.py [init|apply]")
+        print("Usage: python3 apply_watchlist.py [init|apply]")
     elif sys.argv[1] == "init":
         init_db()
         print("Database initialized.")
     elif sys.argv[1] == "apply":
-        cfg = os.path.join(os.path.dirname(__file__), "../config/watchlist.json")
+        cfg = os.path.join(os.path.dirname(__file__), "../../config/watchlist.json")
         apply_config(cfg)

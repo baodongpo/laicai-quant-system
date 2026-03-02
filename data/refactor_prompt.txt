@@ -1,0 +1,10 @@
+Refactor laicai/data-svc/scripts/sync_klines.py with these production-grade requirements:
+1. IPO Detection: If API returns 0 rows, check a 30-day window 6 months prior. Only mark is_fully_backfilled=1 if both are empty.
+2. Performance: Replace row-by-row inserts with executemany() for batch operations.
+3. Transactions: Use 'with self.conn:' context managers for all database writes.
+4. Concurrency: Use ThreadPoolExecutor (max_workers=3) to sync A, HK, and US markets in parallel. Each market thread must maintain its own random delay (3-8s) between symbols.
+5. ETF/Index Support: Detect symbols like SH588200 (6 digits) and use ak.fund_etf_hist_em.
+6. Periodic Audit: Run DataAuditor.audit_all_enabled_stocks() once after the entire sync cycle completes, not during the sync.
+7. Reliability: Add retry logic with exponential backoff for AkShare API calls.
+8. Cleanup: Ensure database connections and cursors are properly closed.
+Apply changes directly to the file without asking for permission.

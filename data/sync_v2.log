@@ -1,0 +1,78 @@
+2026-03-02 13:43:46,539 [INFO] [MainThread] Proxy enabled: http://127.0.0.1:10808
+2026-03-02 13:43:46,549 [INFO] [SyncWorker_1] [SZ000858] Syncing: 2022-03-02 -> 2023-03-01
+2026-03-02 13:43:46,552 [INFO] [SyncWorker_0] [SH600519] Syncing: 2022-03-02 -> 2023-03-01
+2026-03-02 13:43:46,558 [INFO] [SyncWorker_2] [AAPL] Syncing: 2022-03-02 -> 2023-03-01
+2026-03-02 13:43:51,538 [INFO] [SyncWorker_2] [AAPL] Jitter sleep: 5.44s...
+2026-03-02 13:43:56,979 [INFO] [SyncWorker_2] [NVDA] Syncing: 2023-03-02 -> 2024-02-29
+2026-03-02 13:44:01,898 [INFO] [SyncWorker_2] [NVDA] Jitter sleep: 7.06s...
+2026-03-02 13:44:03,267 [ERROR] [SyncWorker_1] [SZ000858] Fetch/Save Failed: RetryError[<Future at 0x7f36afc31650 state=finished raised ProxyError>]
+2026-03-02 13:44:03,271 [INFO] [SyncWorker_1] [SZ000858] Jitter sleep: 5.06s...
+2026-03-02 13:44:05,160 [ERROR] [SyncWorker_0] [SH600519] Fetch/Save Failed: RetryError[<Future at 0x7f36afc32790 state=finished raised ProxyError>]
+2026-03-02 13:44:05,164 [INFO] [SyncWorker_0] [SH600519] Jitter sleep: 3.11s...
+2026-03-02 13:44:08,277 [INFO] [SyncWorker_0] [00700] Syncing: 2022-03-02 -> 2023-03-01
+2026-03-02 13:44:08,342 [INFO] [SyncWorker_1] [09988] Syncing: 2023-03-03 -> 2024-03-01
+2026-03-02 13:44:08,961 [INFO] [SyncWorker_2] [00981] Syncing: 2023-03-03 -> 2024-03-01
+2026-03-02 13:44:11,657 [INFO] [SyncWorker_1] [09988] Jitter sleep: 7.87s...
+2026-03-02 13:44:12,501 [INFO] [SyncWorker_0] [00700] Jitter sleep: 3.81s...
+2026-03-02 13:44:13,269 [INFO] [SyncWorker_2] [00981] Jitter sleep: 5.69s...
+2026-03-02 13:44:16,316 [INFO] [SyncWorker_0] [01810] Syncing: 2023-03-03 -> 2024-03-01
+2026-03-02 13:44:18,965 [INFO] [SyncWorker_2] [02020] Syncing: 2023-03-03 -> 2024-03-01
+2026-03-02 13:44:19,539 [INFO] [SyncWorker_1] [03750] Jitter sleep: 5.51s...
+2026-03-02 13:44:20,477 [INFO] [SyncWorker_0] [01810] Jitter sleep: 6.90s...
+2026-03-02 13:44:23,621 [INFO] [SyncWorker_2] [02020] Jitter sleep: 6.59s...
+2026-03-02 13:44:25,053 [INFO] [SyncWorker_1] [09868] Syncing: 2023-03-03 -> 2024-03-01
+2026-03-02 13:44:27,250 [INFO] [SyncWorker_1] [09868] Jitter sleep: 4.83s...
+2026-03-02 13:44:27,382 [INFO] [SyncWorker_0] [09626] Syncing: 2023-03-03 -> 2024-03-01
+2026-03-02 13:44:30,223 [INFO] [SyncWorker_2] [02525] Jitter sleep: 7.26s...
+2026-03-02 13:44:30,373 [INFO] [SyncWorker_0] [09626] Jitter sleep: 6.28s...
+2026-03-02 13:44:32,085 [INFO] [SyncWorker_1] [09660] Syncing: 2023-03-03 -> 2024-03-01
+2026-03-02 13:44:33,803 [INFO] [SyncWorker_1] [09660] Probing deep historical window: 2022-08-05 -> 2022-09-04
+2026-03-02 13:44:33,803 [INFO] [SyncWorker_1] [09660] Syncing: 2022-08-05 -> 2022-09-04
+2026-03-02 13:44:35,258 [INFO] [SyncWorker_1] [09660] IPO reached and verified. Fully backfilled.
+2026-03-02 13:44:35,261 [INFO] [SyncWorker_1] [09660] Jitter sleep: 3.04s...
+2026-03-02 13:44:36,654 [INFO] [SyncWorker_0] [SZ000063] Syncing: 2024-03-02 -> 2025-03-01
+2026-03-02 13:44:37,492 [INFO] [SyncWorker_2] [SH588200] Syncing: 2024-01-01 -> 2026-03-02
+2026-03-02 13:44:38,303 [INFO] [SyncWorker_1] [SZ300308] Syncing: 2024-03-02 -> 2025-03-01
+2026-03-02 13:44:54,390 [ERROR] [SyncWorker_2] [SH588200] Fetch/Save Failed: RetryError[<Future at 0x7f36afae65d0 state=finished raised ProxyError>]
+2026-03-02 13:44:54,391 [INFO] [SyncWorker_2] [SH588200] Syncing: 2025-03-02 -> 2026-03-01
+2026-03-02 13:44:54,819 [ERROR] [SyncWorker_0] [SZ000063] Fetch/Save Failed: RetryError[<Future at 0x7f36be7b8f90 state=finished raised ProxyError>]
+2026-03-02 13:44:54,823 [INFO] [SyncWorker_0] [SZ000063] Jitter sleep: 5.25s...
+2026-03-02 13:44:56,237 [ERROR] [SyncWorker_1] [SZ300308] Fetch/Save Failed: RetryError[<Future at 0x7f36afae6710 state=finished raised ProxyError>]
+2026-03-02 13:44:56,241 [INFO] [SyncWorker_1] [SZ300308] Jitter sleep: 4.24s...
+2026-03-02 13:45:00,077 [INFO] [SyncWorker_0] [SZ300502] Syncing: 2024-03-02 -> 2025-03-01
+2026-03-02 13:45:00,490 [INFO] [SyncWorker_1] [SH688017] Syncing: 2024-03-02 -> 2025-03-01
+2026-03-02 13:45:11,207 [ERROR] [SyncWorker_2] [SH588200] Fetch/Save Failed: RetryError[<Future at 0x7f36be7a5a90 state=finished raised ProxyError>]
+2026-03-02 13:45:11,211 [INFO] [SyncWorker_2] [SH588200] Jitter sleep: 6.33s...
+2026-03-02 13:45:17,549 [INFO] [SyncWorker_2] [SH600118] Syncing: 2024-03-02 -> 2025-03-01
+2026-03-02 13:45:18,319 [ERROR] [SyncWorker_0] [SZ300502] Fetch/Save Failed: RetryError[<Future at 0x7f36afaf92d0 state=finished raised ProxyError>]
+2026-03-02 13:45:18,323 [INFO] [SyncWorker_0] [SZ300502] Jitter sleep: 7.96s...
+2026-03-02 13:45:26,284 [INFO] [SyncWorker_0] [SH600893] Syncing: 2024-03-02 -> 2025-03-01
+2026-03-02 13:45:29,774 [ERROR] [SyncWorker_1] [SH688017] Fetch/Save Failed: RetryError[<Future at 0x7f36afaf95d0 state=finished raised ProxyError>]
+2026-03-02 13:45:29,781 [INFO] [SyncWorker_1] [SH688017] Jitter sleep: 6.46s...
+2026-03-02 13:45:36,109 [ERROR] [SyncWorker_2] [SH600118] Fetch/Save Failed: RetryError[<Future at 0x7f36be7ece50 state=finished raised ProxyError>]
+2026-03-02 13:45:36,118 [INFO] [SyncWorker_2] [SH600118] Jitter sleep: 4.52s...
+2026-03-02 13:45:45,897 [ERROR] [SyncWorker_0] [SH600893] Fetch/Save Failed: RetryError[<Future at 0x7f36affdda90 state=finished raised ProxyError>]
+2026-03-02 13:45:45,901 [INFO] [SyncWorker_0] [SH600893] Jitter sleep: 7.32s...
+2026-03-02 13:45:53,225 [INFO] [MainThread] Sync cycle finished. Triggering final audit...
+2026-03-02 13:45:53,225 [INFO] [MainThread] Starting Cycle Audit Report...
+2026-03-02 13:45:53,285 [WARNING] [MainThread] AUDIT ALERT: SH600519 has 1 gaps between 2023-03-02 and 2026-03-02
+2026-03-02 13:45:53,339 [WARNING] [MainThread] AUDIT ALERT: SZ000858 has 1 gaps between 2023-03-02 and 2026-03-02
+2026-03-02 13:45:53,587 [WARNING] [MainThread] AUDIT ALERT: AAPL has 1 gaps between 2022-03-02 and 2026-03-02
+2026-03-02 13:45:53,830 [WARNING] [MainThread] AUDIT ALERT: NVDA has 1 gaps between 2023-03-02 and 2026-03-02
+2026-03-02 13:45:54,020 [WARNING] [MainThread] AUDIT ALERT: 00700 has 3 gaps between 2022-03-02 and 2026-03-02
+2026-03-02 13:45:54,199 [WARNING] [MainThread] AUDIT ALERT: 09988 has 3 gaps between 2023-03-03 and 2026-03-02
+2026-03-02 13:45:54,389 [WARNING] [MainThread] AUDIT ALERT: 00981 has 3 gaps between 2023-03-03 and 2026-03-02
+2026-03-02 13:45:54,569 [WARNING] [MainThread] AUDIT ALERT: 01810 has 3 gaps between 2023-03-03 and 2026-03-02
+2026-03-02 13:45:54,750 [WARNING] [MainThread] AUDIT ALERT: 02020 has 3 gaps between 2023-03-03 and 2026-03-02
+2026-03-02 13:45:54,944 [WARNING] [MainThread] AUDIT ALERT: 03750 has 52 gaps between 2025-03-02 and 2026-03-02
+2026-03-02 13:45:55,122 [WARNING] [MainThread] AUDIT ALERT: 09868 has 3 gaps between 2023-03-03 and 2026-03-02
+2026-03-02 13:45:55,301 [WARNING] [MainThread] AUDIT ALERT: 09626 has 3 gaps between 2023-03-03 and 2026-03-02
+2026-03-02 13:45:55,453 [WARNING] [MainThread] AUDIT ALERT: 02525 has 136 gaps between 2025-03-02 and 2026-03-02
+2026-03-02 13:45:55,615 [WARNING] [MainThread] AUDIT ALERT: 09660 has 158 gaps between 2024-03-02 and 2026-03-02
+2026-03-02 13:45:55,644 [WARNING] [MainThread] AUDIT ALERT: SZ000063 has 1 gaps between 2025-03-02 and 2026-03-02
+2026-03-02 13:45:55,671 [WARNING] [MainThread] AUDIT ALERT: SZ300308 has 1 gaps between 2025-03-02 and 2026-03-02
+2026-03-02 13:45:55,699 [WARNING] [MainThread] AUDIT ALERT: SZ300502 has 1 gaps between 2025-03-02 and 2026-03-02
+2026-03-02 13:45:55,727 [WARNING] [MainThread] AUDIT ALERT: SH688017 has 1 gaps between 2025-03-02 and 2026-03-02
+2026-03-02 13:45:55,756 [WARNING] [MainThread] AUDIT ALERT: SH600118 has 1 gaps between 2025-03-02 and 2026-03-02
+2026-03-02 13:45:55,788 [WARNING] [MainThread] AUDIT ALERT: SH600893 has 1 gaps between 2025-03-02 and 2026-03-02
+2026-03-02 13:45:55,789 [WARNING] [MainThread] Audit: FAIL. Gaps found in 20 stocks.

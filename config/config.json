@@ -1,0 +1,16 @@
+{
+  "proxy": {
+    "enabled": true,
+    "http": "http://127.0.0.1:10808",
+    "https": "http://127.0.0.1:10808",
+    "description": "Local proxy for accessing domestic data sources (A-shares/Sina)"
+  },
+  "database": {
+    "path": "data/laicai.db"
+  },
+  "sync_settings": {
+    "safe_delay_min": 3,
+    "safe_delay_max": 8,
+    "default_backfill_years": 2
+  }
+}
